@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+ul li{
+    list-style:none ;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+body{
+    background-color:hsl(202, 74%, 10%) ;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: rgb(31, 55, 68);
+    padding: 10px 0px;
+}
+.conteiner{
+    width: 80%;
+    margin: 0 auto;
+}
+nav .conteiner .logo h1{
+    color: aliceblue;
+}
+nav .conteiner .logo span{
+    color: blue;
+    font-size: 25px;
+}
+.logo{
+    width: 30%;
+    float: left;
+    font-size: 25px;
+}
+.logo a{
+    color: aliceblue;
+}
+.menu{
+    width: 70%;
+    float: left;
+}
+.menu ul{
+    float: right;
+}
+.menu ul li{
+    text-align: right;
+    padding: 13px 20px;
+    float: left;
+}
+.menu ul li a{
+    color: white;
+    display: block;
+    font-size: 18px;
+    transition-property: width;
+}
+.menu ul li:hover a{
+    font-size: 23px;
+}
+.menu ul li a i{
+    margin-left: 25px;
+}
+.menu ul li .dropmenu ul li a #wd{
+    margin-left: 20px;
+}
+.menu ul li .dropmenu ul li a #gd{
+    margin-left: 62px;
+}
+.dropmenu{
+    display: none;
+    transform: translateY(-2em);
+
+}
+.menu ul li:focus-within .dropmenu{
+    display: block;
+    color: red;
+    width: 200px;
+    text-align: left;
+    background-color: rgb(12, 89, 131);
+    position: absolute;
+    left:60%;
+    top: 97px;
+    transform: translateY(-2em);
+}
+.submenu{
+    display: none;
+}
+.dropmenu ul li:hover .submenu{
+    float: left;
+    display: block;
+    position: absolute;
+    background-color:#336699;
+    top: 0;
+    left: 200px;
+    text-align: left;
+    margin-right: 10px;
+    width: 150px;
+}
+.dropmenu ul li .submenu ul li:hover a{
+    padding: 10px 15px;
+    text-align: left;
+    background-color:hsl(202, 74%, 10%) ;
+    color: aqua;
+}
+.sceond_submenu{
+    display: none;
+}
+.dropmenu ul li:hover .sceond_submenu{
+    float: right;
+    display: block;
+    position: absolute;
+    background-color:#336699;
+    top: 60px;
+    left: 200px;
+    text-align: left;
+    margin-right: 10px;
+    width: 150px;
+    color: #0052cc;
+    font-size: 20px;
+}
+.dropmenu ul li .sceond_submenu ul li:hover a{
+    padding: 10px 15px;
+    text-align: left;
+    background-color:hsl(202, 74%, 10%) ;
+    color: aqua;
+}
+.menu ul li .dropmenu .sceond_submenu:hover a{
+    display: block;
+}
+.banner{
+    background: url(../Images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    margin-left: -1px;
+}
+.sceond_dropmenu{
+    display: none;
+    transform: translateY(-2em);
+
+}
+.menu ul li:focus-within .sceond_dropmenu{
+    display: block;
+    color: red;
+    width: 200px;
+    text-align: left;
+    background-color: rgb(12, 89, 131);
+    position: absolute;
+    left:70%;
+    top: 97px;
+    transform: translateY(-2em);
+}
+
+.overlay{
+    padding: 234px 10px;
+    background-color: rgba(0, 0, 0, .72);
+}
+.banner_con{
+    color: aliceblue;
+    transition: all 4s;
+}
+.banner_con h1{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner_con h4{
+    font-size: 23px;
+}
+.banner_con a{
+    padding: 20px;
+    position: absolute;
+    background-color: skyblue;
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 2s;
+}
+#about .about_button h1{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-top: 50px;
+    padding: 20px 50px;
+    background-color:hsl(201, 82%, 45%) ;
+    border-radius: 50px;
+}
+#about .about_img img{
+    width: 550px;
+    height: 300px;
+    margin:30px 15px;
+    display: inline;
+    border-radius: 50px;
+    float: left;
+}
+#about .about_con{
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 15px;
+    line-height: 30px;
+    color: aliceblue;
+}
+#about h2{
+    padding: 15px 0px;
+}
+#about .aboutimg img{
+    float: right;
+    width: 550px;
+    height: 300px;
+    margin:30px 15px;
+    display: inline;
+    border-radius: 50px;
+}
+#about .aboutcon{
+    position: absolute;
+    top: 1070px;
+    right: 718px;
+    left: 130px;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 15px;
+    line-height: 30px;
+    color: aliceblue;
+}
+#about .facilities{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 60px;
+    color: aliceblue;
+}
+#gallery .gallery_button h1{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-top: 80px;
+    padding: 20px 50px;
+    background-color:hsl(201, 82%, 45%) ;
+    border-radius: 50px;
+}
+#gallery .gal_img img{
+    height: 270px;
+    width: 480px;
+    float: left;
+    border-radius: 50px;
+    margin: 0px 5px;
+    margin-top: 20px;
+    transition: width 2s;
+}
+#gallery .gal_img img:hover{
+    width: 510px;
+    height: 300px;
+    transition: width 2s;
+}
+#gallery .gal_img .gly_last{
+    width: 480px;
+    float: left;
+    position: relative;
+}
+#gallery .gal_img .gly_last img{
+    width: 100%;
+}
+.gly_overlay{
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 100%;
+    height: 270px;
+    background-color: rgba(0, 0, 0, 0.71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.gly_overlay a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.gly_last:hover .gly_overlay{
+    transform: scale(1);
+    transition: all linear .3s;
+}
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+footer h3{
+    display:inline-flex;
+    color: white;
+}
+.foot_con span{
+    color: white;
+    font-size: 25px;
+    position: relative;
+}
+.foot_con{
+    display: block;
+    background-color: 	rgb(0,0,0,0.6);
+    position: relative;
+}
+.foot_con ul{
+    display: flex;
+}
+.foot_con ul li{
+    display: block;
+}
+.foot_con ul li a{
+    display: block;
+}
+.foot_con ul li a i{
+    position: relative;
+    display: block;
+    justify-content: right;
+    align-items: right;
+    transition: width 3s;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    position: absolute;
+}
+#fb{
+    padding: 10px 25px;
+    position: absolute;
+    right: 425px;
+    top: 105px;
+    color: blue;
+    border-radius: 10px;
+}
+#ins{
+    padding: 10px 25px;
+    position: absolute;
+    right: 320px;
+    top: 105px;
+    color: red;
+    border-radius: 10px;
+}
+#tw{
+    padding: 10px 25px;
+    position: absolute;
+    right: 215px;
+    top: 105px;
+    color: #00acee;
+    border-radius: 10px;
+}
+.foot_con ul li a:hover i{
+    width: 50px;
+    transition: width 3s;
+}
+/* Contact Page CSS */
+
+.map iframe{
+    margin-top: 50px;
+    border-radius: 50px;
+    padding: 10px 0px;
+}
+.gal_con h2{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 18px 10px 18px 5px;
+    margin-left: 15px;
+}
+
+.gal_con img{
+    height: 250px;
+    width: 40%;
+    float: left;
+    margin: 0px 5px;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: width 1s;
+}
+.gal_con img:hover{
+    width: 510px;
+    height: 300px;
+    transition: width 1s;
+}
+footer{
+    margin-top: 20px;
+}
+.student{
+    height: 350px;
+    width: 32%;
+    background-color: white;
+    text-align: left;
+    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
+}
+.student img{
+    margin-left: 30px;
+    height: 230px;
+    width: 80%;
+    transition: all 1s;
+}
+.morn_stu .conteiner h2{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 18px 10px 18px 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all 1s;
+    background: linear-gradient(to bottom, #ff5050 0%, #6699ff 100%);
+}
+.student h3{
+    font-size: 15px;
+    line-height: 25px;
+    margin: 10px 0px 0px 30px;
+    transition: all 1s;
+}
